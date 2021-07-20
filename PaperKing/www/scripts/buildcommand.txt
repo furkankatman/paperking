@@ -1,0 +1,7 @@
+
+cordova build android --release -- --keystore="c:/vitaminci.keystore" --storePassword=1457fk.. --alias=vitaminci --password=1457fk..
+
+keytool -genkeypair -v -keystore c:\vitaminci.keystore -alias vitaminci -keyalg RSA -keysize 2048 -validity 10000
+
+git remote set-url origin https://<USERNAME>:<PASSWORD>@bitbucket.org/path/to/repo.git
+##burası apk imzalama işleri ile ilgili.

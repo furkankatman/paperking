@@ -1,0 +1,17 @@
+<md-content class="Home" md-swipe-left="onSwipeLeft($event, $target)">
+  <div style="display: flex; flex-wrap: wrap">
+    <div
+      class="Square"
+      ng-style="s.isAttackPoint!=true?{'background':s.Owner.Color}:{'background':'black'}"
+      ng-click="logPosition(s)"
+      ng-repeat="s in Game.Squares"
+    ></div>
+    <div md-colors="{background:'grey-100'}" style="width: 100%; height: 40px">
+      <div>Takımlar :</div>
+      <span>A- {{Game.Teams[0].Count}}</span>
+      <span>B- {{Game.Teams[1].Count}}</span>
+      <span>C- {{Game.Teams[2].Count}}</span>
+      <span>Tur: {{Game.Turn}}</span>
+    </div>
+  </div>
+</md-content>
